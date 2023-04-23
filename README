@@ -2,7 +2,7 @@ NAME
     wd-print - Script to manipulate with Wikidata.org.
 
 SYNOPSIS
-     wd-print [-h] [-l lang] [--version] wd_id
+     wd-print [-h] [-l lang] [-m mediawiki_site] [--version] wd_id
 
 ARGUMENTS
     *       "-h"
@@ -14,6 +14,12 @@ ARGUMENTS
             Language used defined by ISO 639‑1 Code.
 
             Default value is en = English.
+
+    *       "-m mediawiki_site"
+
+            MediaWiki site.
+
+            Default value is 'www.wikidata.org'.
 
     *       "--version"
 

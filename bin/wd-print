@@ -28,7 +28,7 @@ wd-print - Script to manipulate with Wikidata.org.
 
 =head1 SYNOPSIS
 
- wd-print [-h] [-l lang] [--version] wd_id
+ wd-print [-h] [-l lang] [-m mediawiki_site] [--version] wd_id
 
 =head1 ARGUMENTS
 
@@ -43,6 +43,12 @@ Print help.
 Language used defined by ISO 639‑1 Code.
 
 Default value is en = English.
+
+=item * C<-m mediawiki_site>
+
+MediaWiki site.
+
+Default value is 'www.wikidata.org'.
 
 =item * C<--version>
 

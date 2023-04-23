@@ -35,11 +35,13 @@ sub run {
 	$self->{'_opts'} = {
 		'h' => 0,
 		'l' => 'en',
+		'm' => 'www.wikidata.org',
 	};
-	if (! getopts('hl:', $self->{'_opts'}) || $self->{'_opts'}->{'h'}) {
-		print STDERR "Usage: $0 [-h] [-l lang] [--version] wd_id\n";
+	if (! getopts('hl:m:', $self->{'_opts'}) || $self->{'_opts'}->{'h'}) {
+		print STDERR "Usage: $0 [-h] [-l lang] [-m mediawiki_site] [--version] wd_id\n";
 		print STDERR "\t-h\t\tHelp.\n";
 		print STDERR "\t-l lang\t\tLanguage used (default is English = en)\n";
+		print STDERR "\t-m mediawiki_site\tMediaWiki site (default is www.wikidata.org).\n";
 		print STDERR "\t--version\tPrint version.\n";
 		print STDERR "\twd_id\t\tWikidata id (qid or pid or lid).\n";
 		return 1;
@@ -47,7 +49,7 @@ sub run {
 	my $wd_id = $ARGV[0];
 
 	my $api = Wikibase::API->new(
-		'mediawiki_site' => 'www.wikidata.org',
+		'mediawiki_site' => $self->{'_opts'}->{'m'},
 	);
 
 	my $obj = $api->get_item($wd_id);
