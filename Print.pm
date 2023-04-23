@@ -180,7 +180,8 @@ L<Class::Utils>,
 L<Getopt::Std>,
 L<Unicode::UTF8>,
 L<Wikibase::API>,
-L<Wikibase::Datatype::Print::Item>.
+L<Wikibase::Datatype::Print::Item>,
+L<Wikibase::Datatype::Print::Property>.
 
 =head1 REPOSITORY
 
