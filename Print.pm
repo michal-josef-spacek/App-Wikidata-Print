@@ -39,9 +39,9 @@ sub run {
 	if (! getopts('hl:', $self->{'_opts'}) || $self->{'_opts'}->{'h'}) {
 		print STDERR "Usage: $0 [-h] [-l lang] [--version] wd_id\n";
 		print STDERR "\t-h\t\tHelp.\n";
-		print STDERR "\t-l lang\tLanguage used (default is English = en)\n";
+		print STDERR "\t-l lang\t\tLanguage used (default is English = en)\n";
 		print STDERR "\t--version\tPrint version.\n";
-		print STDERR "\twd_id\tWikidata id (qid or pid or lid).\n";
+		print STDERR "\twd_id\t\tWikidata id (qid or pid or lid).\n";
 		return 1;
 	}
 	my $wd_id = $ARGV[0];
