@@ -50,7 +50,7 @@ Print version of script.
 
 =item * C<wd_id>
 
-Identifier in Wikidata (qid or pid).
+Identifier in Wikidata (qid or pid or lid).
 
 =back
 

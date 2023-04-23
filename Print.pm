@@ -8,6 +8,7 @@ use Getopt::Std;
 use Unicode::UTF8 qw(encode_utf8);
 use Wikibase::API;
 use Wikibase::Datatype::Print::Item;
+use Wikibase::Datatype::Print::Lexeme;
 use Wikibase::Datatype::Print::Property;
 
 our $VERSION = 0.01;
@@ -40,7 +41,7 @@ sub run {
 		print STDERR "\t-h\t\tHelp.\n";
 		print STDERR "\t-l lang\tLanguage used (default is English = en)\n";
 		print STDERR "\t--version\tPrint version.\n";
-		print STDERR "\twd_id\tWikidata id (qid or pid).\n";
+		print STDERR "\twd_id\tWikidata id (qid or pid or lid).\n";
 		return 1;
 	}
 	my $wd_id = $ARGV[0];
@@ -53,6 +54,10 @@ sub run {
 
 	if (ref $obj eq 'Wikibase::Datatype::Item') {
 		print encode_utf8(scalar Wikibase::Datatype::Print::Item::print($obj, {
+			'lang' => $self->{'_opts'}->{'l'},
+		})), "\n";
+	} elsif (ref $obj eq 'Wikibase::Datatype::Lexeme') {
+		print encode_utf8(scalar Wikibase::Datatype::Print::Lexeme::print($obj, {
 			'lang' => $self->{'_opts'}->{'l'},
 		})), "\n";
 	} elsif (ref $obj eq 'Wikibase::Datatype::Property') {
@@ -68,7 +73,6 @@ sub run {
 }
 
 1;
-
 
 __END__
 
@@ -181,6 +185,7 @@ L<Getopt::Std>,
 L<Unicode::UTF8>,
 L<Wikibase::API>,
 L<Wikibase::Datatype::Print::Item>,
+L<Wikibase::Datatype::Print::Lexeme>,
 L<Wikibase::Datatype::Print::Property>.
 
 =head1 REPOSITORY

@@ -28,6 +28,7 @@ requires:
   Unicode::UTF8: 0
   Wikibase::API: 0.04
   Wikibase::Datatype::Print::Item: 0
+  Wikibase::Datatype::Print::Lexeme: 0.28
   Wikibase::Datatype::Print::Property: 0
   perl: 5.6.0
 resources:
