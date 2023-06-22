@@ -1,4 +1,4 @@
-0.02
+0.02 2023-06-22T10:29:53+02:00
  - Add tests.
  - Fix help printing.
  - Fix minimal version of dependencies.
