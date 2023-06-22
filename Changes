@@ -1,5 +1,6 @@
 0.02
  - Fix minimal version of dependencies.
+ - Update Module::Install to 1.21 version.
 
 0.01 2023-04-28T20:36:21+02:00
  - First version.
