@@ -19,12 +19,11 @@ name 'App-Wikidata-Print';
 readme_from 'bin/wd-print';
 recursive_author_tests('xt');
 requires 'Class::Utils' => 0;
+requires 'English' => 0;
 requires 'Getopt::Std' => 0;
 requires 'Unicode::UTF8' => 0;
 requires 'Wikibase::API' => 0.04;
-requires 'Wikibase::Datatype::Print::Item' => 0.12;
-requires 'Wikibase::Datatype::Print::Lexeme' => 0.12;
-requires 'Wikibase::Datatype::Print::Property' => 0.12;
+requires 'Wikibase::Datatype::Print' => 0.16;
 requires 'perl' => '5.6.0';
 resources 'bugtracker' => 'https://github.com/michal-josef-spacek/App-Wikidata-Print/issues',
 resources 'homepage' => 'https://github.com/michal-josef-spacek/App-Wikidata-Print';
