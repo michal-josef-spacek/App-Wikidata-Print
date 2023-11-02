@@ -37,7 +37,7 @@ sub run {
 		'l' => 'en',
 		'm' => 'www.wikidata.org',
 	};
-	if (! getopts('hl:m:', $self->{'_opts'}) || $self->{'_opts'}->{'h'}) {
+	if (! getopts('hl:m:', $self->{'_opts'}) || $self->{'_opts'}->{'h'} || @ARGV < 1) {
 		print STDERR "Usage: $0 [-h] [-l lang] [-m mediawiki_site] [--version] wd_id\n";
 		print STDERR "\t-h\t\t\tPrint help.\n";
 		print STDERR "\t-l lang\t\t\tLanguage used (default is English = en).\n";

@@ -1,4 +1,5 @@
 0.03
+ - Fix missing id for print.
 
 0.02 2023-06-22T10:29:53+02:00
  - Add tests.
