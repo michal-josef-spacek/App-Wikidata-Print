@@ -2,7 +2,6 @@ TODO
 ====
 2. Add example for property
 3. Add example for lexeme
-4. Constructor tests.
 5. How to print object on Commons?
 7.
 
@@ -14,3 +13,6 @@ OK [20230418] skim
 6. Print unit (https://www.wikidata.org/wiki/Q122132634 and page)
 Funguje dobre.
 NONE [20240621] skim
+
+4. Constructor tests.
+OK [20240621] skim
