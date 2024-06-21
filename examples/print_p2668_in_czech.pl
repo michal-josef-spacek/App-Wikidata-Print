@@ -7,7 +7,7 @@ use App::Wikidata::Print;
 
 # Arguments.
 @ARGV = (
-        '-l cs',
+        '-l', 'cs',
         'P2668',
 );
 

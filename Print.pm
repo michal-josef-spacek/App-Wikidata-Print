@@ -121,7 +121,7 @@ Returns 1 for error, 0 for success.
 
  # Arguments.
  @ARGV = (
-         '-l cs',
+         '-l', 'cs',
          'P2668',
  );
 
