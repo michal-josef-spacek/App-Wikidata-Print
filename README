@@ -1,5 +1,5 @@
 NAME
-    wd-print - Script to manipulate with Wikidata.org.
+    wd-print - Command line tool for print Wikidata item.
 
 SYNOPSIS
      wd-print [-h] [-l lang] [-m mediawiki_site] [-r] [--version] wd_id
