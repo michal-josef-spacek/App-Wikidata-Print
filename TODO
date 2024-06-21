@@ -4,10 +4,13 @@ TODO
 3. Add example for lexeme
 4. Constructor tests.
 5. How to print object on Commons?
-6. Print unit (https://www.wikidata.org/wiki/Q122132634 and page)
 7.
 
 Applied
 =======
 1. Move from perl_app wd-print
 OK [20230418] skim
+
+6. Print unit (https://www.wikidata.org/wiki/Q122132634 and page)
+Funguje dobre.
+NONE [20240621] skim
