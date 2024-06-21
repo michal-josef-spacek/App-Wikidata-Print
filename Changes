@@ -1,6 +1,8 @@
 0.04
  - Add contructor tests.
  - Fix example in doc.
+ - Regen example to output with Wikibase::Datatype::Print@0.17 with Czech
+   translation.
  - Update copyright years.
 
 0.03 2023-11-02T20:05:39+01:00
