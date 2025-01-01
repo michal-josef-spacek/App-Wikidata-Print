@@ -4,7 +4,8 @@ TODO
 3. Add example for lexeme
 5. How to print object on Commons?
 7. Add support for not printing of external identifiers.
-8.
+8. Add support for quantities like 1±2 (Wikidata Q9543)
+9.
 
 Applied
 =======
