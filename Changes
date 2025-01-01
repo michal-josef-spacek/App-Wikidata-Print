@@ -1,5 +1,6 @@
 0.05
  - Fix tool abstract in man page.
+ - Update copyright years.
 
 0.04 2024-06-21T15:10:12+02:00
  - Add contructor tests.
